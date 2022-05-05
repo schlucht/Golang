@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Seite</title>
+    <style>
+        form {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        input[type=text] {
+            padding: 5px;
+            font-size: 14px;
+            font-family: monospace;
+        }
+        label {
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Index Seite</h1>
-    <form action="">
+    <h1>Login Seite</h1>
+    <form action="/contact" method="GET">
         <label for="name">Name</label>
         <input type="text" id="name">
+        <br/>
+        <label for="password">Password</label>
+        <input type="text" id="password">
+        <br/>
+        <input type="submit">
     </form>
 </body>
 </html>
